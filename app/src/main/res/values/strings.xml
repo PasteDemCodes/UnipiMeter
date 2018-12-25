@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UnipiMeter</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_statistics">Statistics</string>
+    <string name="Settings">Settings</string>
+    <string name="Launch">Launch</string>
+    <string name="Statistics">Statistics</string>
+    <string name="PointsOfInterest">Points Of Interest</string>
+    <string name="owner">P15041 - Dimitrios Zografakis</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/owner"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@+id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/bot_guideline">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+        <Button
+            android:id="@+id/launch_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Launch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:layout_below= "@+id/launch_button"
+                android:id="@+id/statistics_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Statistics"
+                app:layout_constraintStart_toStartOf="@+id/launch_button"
+                app:layout_constraintTop_toBottomOf="@+id/launch_button" />
+
+        <Button
+            android:layout_below= "@+id/statistics_button"
+            android:id="@+id/settings_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Settings"
+            app:layout_constraintStart_toStartOf="@+id/launch_button"
+            app:layout_constraintTop_toBottomOf="@+id/launch_button" />
+
+            <Button
+                android:layout_below= "@+id/settings_button"
+                android:id="@+id/editpoi_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Edit Poi(s)"
+                app:layout_constraintStart_toStartOf="@+id/launch_button"
+                app:layout_constraintTop_toBottomOf="@+id/launch_button" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/bot_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/dead_end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1" />
+
+</android.support.constraint.ConstraintLayout>
